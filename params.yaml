@@ -1,0 +1,13 @@
+split:
+  split_ratio: 0.3
+
+train:
+  seed: 42
+  max_depth: 3
+
+
+# 1 - 'setosa':
+# 2 - 'versicolor':
+# 3 - 'virginica'
+# https://translated.turbopages.org/proxy_u/en-ru.ru.9a5edea2-6360c2cb-3e31c2cb-74722d776562/https/www.freecodecamp.org/news/classification-with-python-automl/
+# https://machinelearningmastery.ru/creating-your-first-machine-learning-classifier-with-sklearn-4d760c680f8a/?ysclid=l9xvqo9vpq407768404 
