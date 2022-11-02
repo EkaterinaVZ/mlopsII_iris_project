@@ -5,7 +5,7 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-path = os.path.join("..", "..", "params.yaml")
+path = os.path.join("params.yaml")
 params = yaml.safe_load(open(path))["split"]
 
 if len(sys.argv) != 2:
@@ -14,10 +14,10 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output_train = os.path.join("..", "..", "data", "stage4", "train.csv")
-os.makedirs(os.path.join("..", "..", "data", "stage4"), exist_ok=True)
-f_output_test = os.path.join("..", "..", "data", "stage4", "test.csv")
-os.makedirs(os.path.join("..", "..", "data", "stage4"), exist_ok=True)
+f_output_train = os.path.join("data", "stage4", "train.csv")
+os.makedirs(os.path.join("data", "stage4"), exist_ok=True)
+f_output_test = os.path.join("data", "stage4", "test.csv")
+os.makedirs(os.path.join("data", "stage4"), exist_ok=True)
 
 p_split_ratio = params["split_ratio"]
 

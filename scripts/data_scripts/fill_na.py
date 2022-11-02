@@ -8,8 +8,8 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output = os.path.join("..", "..", "data", "stage2", "train.csv")
-os.makedirs(os.path.join("..", "..", "data", "stage2"), exist_ok=True)
+f_output = os.path.join("data", "stage2", "train.csv")
+os.makedirs(os.path.join("data", "stage2"), exist_ok=True)
 
 def process_data(fd_in, fd_out):
     target = []
@@ -49,3 +49,4 @@ def process_data(fd_in, fd_out):
 with io.open(f_input, encoding="utf8") as fd_in:
     with io.open(f_output, "w", encoding="utf8") as fd_out:
         process_data(fd_in, fd_out)
+

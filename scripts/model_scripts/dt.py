@@ -12,10 +12,10 @@ if len(sys.argv) != 3:
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output = os.path.join("..", "..", "models", sys.argv[2])
-os.makedirs(os.path.join("..", "..", "models"), exist_ok=True)
+f_output = os.path.join("models", sys.argv[2])
+os.makedirs(os.path.join("models"), exist_ok=True)
 
-path = os.path.join("..", "..", "params.yaml")
+path = os.path.join("params.yaml")
 params = yaml.safe_load(open(path))["train"]
 p_seed = params["seed"]
 p_max_depth = params["max_depth"]

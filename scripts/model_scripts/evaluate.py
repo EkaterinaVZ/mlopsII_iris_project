@@ -19,8 +19,8 @@ with open(sys.argv[2], "rb") as fd:
 
 score = clf.score(X, y)
 
-prc_file = os.path.join("..", "..", "evaluate", "score.json")
-os.makedirs(os.path.join("..", "..", "evaluate"), exist_ok=True)
+prc_file = os.path.join("evaluate", "score.json")
+os.makedirs(os.path.join("evaluate"), exist_ok=True)
 
 with open(prc_file, "w") as fd:
     json.dump({"score": score}, fd)

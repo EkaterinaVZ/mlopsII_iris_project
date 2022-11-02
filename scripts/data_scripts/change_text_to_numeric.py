@@ -8,8 +8,8 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output = os.path.join("..", "..", "data", "stage3", "train.csv")
-os.makedirs(os.path.join("..", "..", "data", "stage3"), exist_ok=True)
+f_output = os.path.join("data", "stage3", "train.csv")
+os.makedirs(os.path.join("data", "stage3"), exist_ok=True)
 
 def process_data(fd_in, fd_out):
     target = []
