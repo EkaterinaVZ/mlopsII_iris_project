@@ -1,5 +1,5 @@
 split:
-  split_ratio: 0.3
+  split_ratio: 0.4
 
 train:
   seed: 42
