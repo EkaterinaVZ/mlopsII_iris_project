@@ -1,4 +1,4 @@
 [core]
     remote = ssh-storage
 ['remote "ssh-storage"']
-    url = ssh://data-srv@data-srv/opt/datasets
+    url = ssh://alexey@192.168.1.1/opt/iris_data
